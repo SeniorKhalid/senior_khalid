@@ -5,222 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khalid Ibrahim Muazu - Full-Stack Developer</title>
 
-    <!-- SEO Meta Tags -->
-    <meta
-      name="description"
-      content="Portfolio of Khalid Ibrahim Muazu, Full-Stack Developer and Prompt Engineer skilled in Python, Flask, JavaScript, MySQL, and AI integration."
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter&display=swap"
+      rel="stylesheet"
     />
-    <meta
-      name="keywords"
-      content="Khalid Ibrahim Muazu, Full-Stack Developer, Prompt Engineer, Python, Flask, JavaScript, MySQL, AI Integration, Nigeria Developer"
-    />
-    <meta name="author" content="Khalid Ibrahim Muazu" />
-
-    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
-    <meta property="og:title" content="Khalid Ibrahim Muazu | Portfolio" />
-    <meta
-      property="og:description"
-      content="Explore Khalid's projects, skills, and professional journey."
-    />
-    <meta
-      property="og:image"
-      content="https://seniorkhalid.github.io/senior_khalid/senior.png"
-    />
-    <meta
-      property="og:url"
-      content="https://seniorkhalid.github.io/senior_khalid/"
-    />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Khalid Ibrahim Muazu | Portfolio" />
-    <meta
-      name="twitter:description"
-      content="Explore Khalid's projects, skills, and professional journey."
-    />
-    <meta
-      name="twitter:image"
-      content="https://seniorkhalid.github.io/senior_khalid/senior.png"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-    <!-- Social connections -->
-    <meta
-      property="og:see_also"
-      content="https://www.instagram.com/senior_khalid01/"
-    />
-    <meta
-      property="og:see_also"
-      content="https://www.linkedin.com/in/seniorkhalid01/"
-    />
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background: #f4f6fa;
-      }
-      header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        padding: 40px 20px;
-      }
-      .header-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-      }
-      .profile-pic {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        border: 4px solid white;
-        object-fit: cover;
-      }
-      .header-text h1 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-      }
-      .header-text p {
-        font-size: 1.2em;
-        opacity: 0.9;
-      }
-      nav {
-        background: #333;
-        padding: 15px;
-        text-align: center;
-        position: sticky;
-        top: 0;
-      }
-      nav a {
-        color: white;
-        margin: 0 20px;
-        text-decoration: none;
-        font-weight: 500;
-      }
-      nav a:hover {
-        color: #667eea;
-      }
-      .container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 40px 20px;
-      }
-      section {
-        margin: 40px 0;
-        padding: 30px;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      }
-      section h2 {
-        color: #667eea;
-        margin-bottom: 20px;
-        font-size: 1.8em;
-      }
-      ul {
-        margin-left: 20px;
-      }
-      .contact-info {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-      .contact-info a {
-        color: #667eea;
-        text-decoration: none;
-      }
-      .contact-info a:hover {
-        text-decoration: underline;
-      }
-      .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-top: 15px;
-        background: #667eea;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: 500;
-      }
-      .btn:hover {
-        background: #5563d8;
-      }
-      footer {
-        background: #333;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-
-      @media (max-width: 768px) {
-        .header-content {
-          flex-direction: column;
-          text-align: center;
-        }
-        .profile-pic {
-          width: 100px;
-          height: 100px;
-          margin-bottom: 15px;
-        }
-        nav a {
-          display: inline-block;
-          margin: 8px;
-          font-size: 0.9em;
-        }
-        .container {
-          padding: 20px 10px;
-        }
-        section {
-          padding: 20px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        header {
-          padding: 20px 10px;
-        }
-        .header-text h1 {
-          font-size: 1.6em;
-        }
-        .header-text p {
-          font-size: 0.9em;
-        }
-        .profile-pic {
-          width: 80px;
-          height: 80px;
-        }
-        nav {
-          padding: 8px;
-        }
-        nav a {
-          margin: 5px;
-          font-size: 0.8em;
-        }
-        section {
-          margin: 20px 0;
-          padding: 15px;
-        }
-      }
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <div class="header-content">
         <img src="senior.png" alt="Khalid Ibrahim Muazu" class="profile-pic" />
         <div class="header-text">
-          <h1>Khalid Ibrahim Muazu</h1>
+          <h1 class="typing">Khalid Ibrahim Muazu</h1>
           <p>
             Full-Stack Developer | Prompt Engineer | Python, Flask, JavaScript,
             MySQL
@@ -229,6 +33,7 @@
       </div>
     </header>
 
+    <!-- Navigation -->
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
@@ -240,8 +45,9 @@
       <a href="#contact">Contact</a>
     </nav>
 
+    <!-- Main Content -->
     <div class="container">
-      <!-- About Section -->
+      <!-- About -->
       <section id="about">
         <h2>About Me</h2>
         <p>
@@ -257,7 +63,7 @@
         >
       </section>
 
-      <!-- Experience Section -->
+      <!-- Experience -->
       <section id="experience">
         <h2>Experience</h2>
         <h3>Employee | Python Community Katsina</h3>
@@ -282,7 +88,7 @@
         </ul>
       </section>
 
-      <!-- Projects Section -->
+      <!-- Projects -->
       <section id="projects">
         <h2>Projects</h2>
         <ul>
@@ -301,7 +107,7 @@
         </ul>
       </section>
 
-      <!-- Skills Section -->
+      <!-- Skills -->
       <section id="skills">
         <h2>Skills & Expertise</h2>
         <ul>
@@ -318,7 +124,7 @@
         </ul>
       </section>
 
-      <!-- Education Section -->
+      <!-- Education -->
       <section id="education">
         <h2>Education & Training</h2>
         <ul>
@@ -338,7 +144,7 @@
         </ul>
       </section>
 
-      <!-- Certifications Section -->
+      <!-- Certifications -->
       <section id="certifications">
         <h2>Certifications</h2>
         <ul>
@@ -375,13 +181,13 @@
         </ul>
       </section>
 
-      <!-- Languages Section -->
+      <!-- Languages -->
       <section id="languages">
         <h2>Languages</h2>
         <p>English | Hausa | Arabic</p>
       </section>
 
-      <!-- Contact Section -->
+      <!-- Contact -->
       <section id="contact">
         <h2>Get In Touch</h2>
         <div class="contact-info">
@@ -401,24 +207,80 @@
           </div>
           <div>
             <strong>Links:</strong><br />
-            <a href="https://github.com/SeniorKhalid" target="_blank">GitHub</a>
+            <a href="https://github.com/SeniorKhalid" target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
             |
             <a
               href="https://www.linkedin.com/in/seniorkhalid01/"
               target="_blank"
-              >LinkedIn</a
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
             >
             |
             <a href="https://www.instagram.com/senior_khalid01/" target="_blank"
-              >Instagram</a
+              ><i class="fab fa-instagram"></i> Instagram</a
             >
           </div>
         </div>
       </section>
     </div>
 
+    <!-- Floating Social Bar -->
+    <div class="social-bar">
+      <a href="https://github.com/SeniorKhalid" target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/seniorkhalid01/" target="_blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a href="https://www.instagram.com/senior_khalid01/" target="_blank"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </div>
+
+    <!-- Footer -->
     <footer>
       <p>&copy; 2025 Khalid Ibrahim Muazu. All rights reserved.</p>
     </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Scroll reveal
+      const sections = document.querySelectorAll("section");
+      const revealOnScroll = () => {
+        const triggerBottom = window.innerHeight * 0.85;
+        sections.forEach((section) => {
+          const sectionTop = section.getBoundingClientRect().top;
+          if (sectionTop < triggerBottom) {
+            section.classList.add("visible");
+          }
+        });
+      };
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+
+      // Neon cursor dot + trail
+      const cursorDot = document.createElement("div");
+      cursorDot.className = "cursor-dot";
+      document.body.appendChild(cursorDot);
+
+      document.addEventListener("mousemove", (e) => {
+        // Move the neon dot
+        cursorDot.style.left = e.pageX + "px";
+        cursorDot.style.top = e.pageY + "px";
+
+        // Create glowing trail
+        const glow = document.createElement("div");
+        glow.className = "cursor-glow";
+        glow.style.left = e.pageX - 10 + "px";
+        glow.style.top = e.pageY - 10 + "px";
+        document.body.appendChild(glow);
+
+        // Remove glow after animation ends
+        setTimeout(() => {
+          glow.remove();
+        }, 600);
+      });
+    </script>
   </body>
 </html>
