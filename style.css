@@ -1,0 +1,385 @@
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #f4f4f4;
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a1a1a);
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
+  scroll-behavior: smooth;
+  cursor: none; /* hide default cursor for custom glow */
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ===== Header with Parallax Background ===== */
+header {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.9)),
+    url("coding-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f4f4f4;
+  padding: 120px 20px;
+  text-align: center;
+  animation: fadeInDown 1.5s ease;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.header-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+.header-text p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* Typing animation */
+.typing {
+  overflow: hidden;
+  border-right: 0.15em solid #00aaff;
+  white-space: nowrap;
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00aaff;
+  }
+}
+
+/* ===== Navigation ===== */
+nav {
+  background: #111;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav a {
+  color: #f4f4f4;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00aaff;
+}
+
+/* ===== Sections ===== */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin: 40px 0;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section h2 {
+  color: #00aaff;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+/* ===== Project Cards with Animated Neon Glow ===== */
+#projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+#projects li {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00aaff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+  animation: neonPulse 6s infinite alternate;
+  transition: transform 0.3s ease;
+}
+
+#projects li:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff;
+    border-color: #00aaff;
+  }
+  25% {
+    box-shadow: 0 0 15px #9d4edd, 0 0 30px #9d4edd;
+    border-color: #9d4edd;
+  }
+  50% {
+    box-shadow: 0 0 15px #39ff14, 0 0 30px #39ff14;
+    border-color: #39ff14;
+  }
+  75% {
+    box-shadow: 0 0 15px #ff007f, 0 0 30px #ff007f;
+    border-color: #ff007f;
+  }
+  100% {
+    box-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff;
+    border-color: #00aaff;
+  }
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 15px;
+  background: #00aaff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #0088cc;
+  transform: scale(1.05);
+}
+
+/* ===== Contact Info ===== */
+.contact-info {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-info a {
+  color: #00aaff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #764ba2;
+}
+
+/* ===== Floating Social Bar ===== */
+.social-bar {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.social-bar a {
+  font-size: 26px;
+  color: #00aaff;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-bar a:hover {
+  color: #764ba2;
+  transform: scale(1.2);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #111;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .header-text h1 {
+    font-size: 2.2em;
+  }
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+  nav a {
+    margin: 8px;
+    font-size: 0.9em;
+  }
+  .container {
+    padding: 20px 10px;
+  }
+  section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text h1 {
+    font-size: 1.6em;
+  }
+  .header-text p {
+    font-size: 0.9em;
+  }
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+  nav a {
+    margin: 5px;
+    font-size: 0.8em;
+  }
+  section {
+    margin: 20px 0;
+    padding: 15px;
+  }
+  .social-bar {
+    display: none;
+  }
+}
+
+/* ===== Glowing Cursor Trail ===== */
+.cursor-glow {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, #00aaff 0%, transparent 70%);
+  mix-blend-mode: screen;
+  animation: glowFade 0.6s forwards;
+}
+
+@keyframes glowFade {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+/* ===== Custom Neon Cursor Dot ===== */
+.cursor-dot {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #00aaff;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* ===== Optional Matrix Grid Overlay ===== */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+  animation: gridMove 10s linear infinite;
+}
+
+@keyframes gridMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 40px;
+  }
+}
