@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://seniorkhalid.github.io/senior_khalid/sitemap.xml
